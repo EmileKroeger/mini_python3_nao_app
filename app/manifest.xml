@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="mini_python3_nao_app" version="0.1.0">
+ <names>
+  <name lang="en_US">Mini Python3 NAO App</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path=".">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+ <requirements>
+  <naoqiRequirement minVersion="2.3"/>
+  <robotRequirement/>
+ </requirements>
+ <services>
+  <service autorun="false" name="main" execStart="/home/nao/.local/share/PackageManager/apps/python3nao/bin/runpy3.sh scripts/main.py"/>
+ </services>
+</package>
